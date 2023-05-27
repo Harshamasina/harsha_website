@@ -7,6 +7,10 @@ import { Helmet } from "react-helmet";
 const Skills = () => {
     return(
         <div>
+            <Helmet>
+                <meta name="description" content="Skills of Harsha Masina" />
+                <meta name='keywords' content='Skills, Skills of Harsha Masina, Frontend, Backend, Fullstack, Javascript, React, NodeJs, Express, MongoDB, MySQL, Java, Python, C#, C++, C, HTML, CSS, Bootstrap, SASS, Material UI, Redux, Redux-Toolkit, Redux-Saga, Jest, Enzyme, React Testing Library,' />
+            </Helmet>
             <section className="skill" id="skills">
                 <h2><BiBrain /></h2>
                 <h2>Skills</h2>

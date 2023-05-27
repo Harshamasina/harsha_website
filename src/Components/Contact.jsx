@@ -1,0 +1,135 @@
+import { useState } from 'react';
+import { MdMailOutline } from 'react-icons/md';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { MdOutlineWhatsapp } from 'react-icons/md';
+import { TiMessages } from "react-icons/ti";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { db } from '../Config/firebase';
+import { collection, addDoc } from 'firebase/firestore';
+ 
+const Contact = () => {
+    const [userMessage, setUserMessage] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+    const [showModal, setShowModal] = useState(false);
+    const CollectionRef = collection(db, 'harsha_portfolio_msg');
+
+    let name, value;
+    let handleInputs = (e) => {
+        name=e.target.name;
+        value = e.target.value;
+        setUserMessage({...userMessage, [name]:value});
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            await addDoc(CollectionRef, userMessage);
+            setShowModal(true);
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+        setUserMessage({
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+        });
+    };
+
+    return(
+        <section id="contact" className='contact'>
+            <h2><TiMessages /></h2>
+            <h2>Contact Me</h2>
+            <p>Get In Touch</p>
+
+            <div className="container contact-container">
+                <div className="contact-options">
+                    <article className="contact-option">
+                        <MdMailOutline className="contact-option-icon" />
+                        <h4>Email</h4>
+                        <h5>harshamasina1999@gmail.com</h5>
+                        <a href="mailto:harshamasina1999@gmail.com" target="_blank">Send a Mail</a> 
+                    </article>
+
+                    <article className="contact-option">
+                        <AiOutlineLinkedin className="contact-option-icon" />
+                        <h4>LinkedIn</h4>
+                        <h5>Masina Mani Harsha</h5>
+                        <a href="https://www.linkedin.com/in/masina-mani-harsha-349a1816b/" target="_blank">Send a message in LinkedIn</a> 
+                    </article>
+
+                    <article className="contact-option">
+                        <MdOutlineWhatsapp className="contact-option-icon" />
+                        <h4>Whatsapp</h4>
+                        <h5>+91-9032330333</h5>
+                        <a href="https://api.whatsapp.com/send?phone=+919032330333" target="_blank">Send a message in Whatsapp</a> 
+                    </article>
+                </div> 
+
+                <form onSubmit={handleSubmit}>
+                    <input 
+                        type='text' 
+                        name='name'
+                        value={userMessage.name}
+                        onChange={handleInputs}
+                        placeholder='Enter Your Name' 
+                        required 
+                    />
+
+                    <input 
+                        type='email' 
+                        name='email'
+                        value={userMessage.email}
+                        onChange={handleInputs}
+                        placeholder='Enter Your Email' 
+                        required 
+                    />
+
+                    <input 
+                        type='tel' 
+                        name='phone'
+                        value={userMessage.phone}
+                        onChange={handleInputs}
+                        placeholder='Enter Your Phone Number' 
+                        required 
+                    />
+
+                    <textarea 
+                        name='message'
+                        value={userMessage.message}
+                        onChange={handleInputs}
+                        rows='7' 
+                        placeholder='Enter Your Message' 
+                        required 
+                    />
+                    <button type='submit' className='btn-submit'>Send Message</button>
+                </form>
+            </div>
+
+            <Modal show={showModal} onHide={() => setShowModal(false)} centered className='contact-modal shadow-lg' size='lg'>
+                <Modal.Header>
+                    <Modal.Title className='modal-title'>Message Sent Successfully</Modal.Title>
+                </Modal.Header>
+                
+                <Modal.Body>{userMessage.name}! Thank You for contacting me!</Modal.Body>
+                
+                <Modal.Footer>
+                    <Button onClick={handleCloseModal} className='btn-modal'>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </section>
+    );
+};
+
+export default Contact;

@@ -8,11 +8,16 @@ import Skills from './Components/Skills';
 import Banner from './Components/Banner';
 import Resume from './Components/Resume';
 import GoToTopBtn from './Components/GoToTopBtn';
+import { Helmet } from 'react-helmet';
 
 const App = () => {
   return(
     <>
       <>
+        <Helmet>
+          <meta name="description" content="Portfolio of Harsha Masina" />
+          <meta name='keywords' content='Portfolio, Harsha Masina, Portfolio of Harsha Masina' />
+        </Helmet>
         <NavBar />
         <Banner />
         <Skills />

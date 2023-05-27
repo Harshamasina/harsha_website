@@ -1,2 +1,1 @@
-# harsha_website
-[Check out my Portfolio]
+Mani Harsha Portfolio

@@ -2,7 +2,8 @@ import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaAws } from "react-icons/fa";
 import { BiBrain } from "react-icons/bi";
-import { Helmet } from "react-helmet"; 
+import { Helmet } from "react-helmet";
+import { FaGitAlt } from "react-icons/fa";
 
 const Skills = () => {
     const FrontEnd = [
@@ -263,7 +264,7 @@ const Skills = () => {
                             {
                                 Others.map((skill, i) => (
                                     <article className="skill-details" key={i}>
-                                        <FaNodeJs className="skill-details-icon" />
+                                        <FaGitAlt className="skill-details-icon" />
                                         <div>
                                             <h4>{skill.name}</h4>
                                             <small className="skill-level">

@@ -126,7 +126,7 @@ const Contact = () => {
                         <Modal.Title className='modal-title'>Message Sent Successfully</Modal.Title>
                     </Modal.Header>
                     
-                    <Modal.Body>{userMessage.name}! Thank You for contacting me!</Modal.Body>
+                    <Modal.Body>{userMessage.name}, Thank You for contacting me!</Modal.Body>
                     
                     <Modal.Footer>
                         <Button onClick={handleCloseModal} className='btn-modal'>

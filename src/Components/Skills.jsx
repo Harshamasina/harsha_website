@@ -5,6 +5,178 @@ import { BiBrain } from "react-icons/bi";
 import { Helmet } from "react-helmet"; 
 
 const Skills = () => {
+    const FrontEnd = [
+        {
+            name: "HTML",
+            level: "3"
+        },
+        {
+            name: "CSS",
+            level: "2"
+        },
+        {
+            name: "Bootstrap",
+            level: "2"
+        },
+        {
+            name: "React Bootstrap",
+            level: "3"
+        },
+        {
+            name: "SASS",
+            level: "1"
+        },
+        {
+            name: "Material UI",
+            level: "1"
+        },
+        {
+            name: "JavaScript",
+            level: "2"
+        },
+        {
+            name: "React JS",
+            level: "2"
+        },
+        {
+            name: "Vite",
+            level: "3"
+        },
+        {
+            name: "SEO",
+            level: "1"
+        }
+    ];
+
+    const Backend = [
+        {
+            name: "Node JS",
+            level: "2"
+        },
+        {
+            name: "Express JS",
+            level: "2"
+        },
+        {
+            name: "MongoDB",
+            level: "2"
+        },
+        {
+            name: "Mongoose",
+            level: "2"
+        },
+        {
+            name: "Firebase",
+            level: "2"
+        },
+        {
+            name: "MySQL",
+            level: "1"
+        },
+        {
+            name: "Python",
+            level: "2"
+        },
+        {
+            name: "REST API",
+            level: "3"
+        },
+        {
+            name: "Moment JS",
+            level: "3"
+        },
+        {
+            name: "Multer",
+            level: "1"
+        }
+    ];
+
+    const Cloud = [
+        {
+            name: "VPC",
+            level: "2"
+        },
+        {
+            name: "EC2",
+            level: "3"
+        },
+        {
+            name: "S3",
+            level: "2"
+        },
+        {
+            name: "Route 53",
+            level: "3"
+        },
+        {
+            name: "EBS",
+            level: "2"
+        },
+        {
+            name: "EFS",
+            level: "2"
+        },
+        {
+            name: "Nginx",
+            level: "2"
+        },
+        {
+            name: "Apache",
+            level: "1"
+        },
+        {
+            name: "SES",
+            level: "1"
+        },
+        {
+            name: "Cloud Watch",
+            level: "2"
+        }
+    ];
+
+    const Others = [
+        {
+            name: "Git",
+            level: "2"
+        },
+        {
+            name: "GitHub",
+            level: "2"
+        },
+        {
+            name: "VS Code",
+            level: "2"
+        },
+        {
+            name: "Terminal",
+            level: "2"
+        },
+        {
+            name: "Linux",
+            level: "2"
+        },
+        {
+            name: "Windows",
+            level: "3"
+        },
+        {
+            name: "Postman",
+            level: "3"
+        },
+        {
+            name: "MongoDB Atlas",
+            level: "3"
+        },
+        {
+            name: "GoDaddy",
+            level: "3"
+        },
+        {
+            name: "Putty",
+            level: "1"
+        }
+    ];
+
     return(
         <div>
             <Helmet>
@@ -19,255 +191,92 @@ const Skills = () => {
                     <div className="skills-frontend">
                         <h3>Frontend Development</h3>
                         <div className="skills-content">
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>HTML</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>CSS</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>Bootstrap</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>SASS</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>Material UI</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>JavaScript</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>Ajax</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>React JS</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>Vite</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaReact className="skill-details-icon" />
-                                <div>
-                                    <h4>SEO</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
+                            {
+                                FrontEnd.map((skill, i) => (
+                                    <article className="skill-details" key={i}>
+                                        <FaReact className="skill-details-icon" />
+                                        <div>
+                                            <h4>{skill.name}</h4>
+                                            <small className="skill-level">
+                                                {
+                                                    skill.level === "1" ? "Beginner" :
+                                                    skill.level === "2" ? "Intermediate" :
+                                                    skill.level === "3" ? "Experienced" : ""
+                                                }
+                                            </small>
+                                        </div>
+                                    </article>
+                                ))
+                            }
                         </div>
                     </div>
 
                     <div className="skills-backend">
                         <h3>Backend Development</h3>
                         <div className="skills-content">
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>Node JS</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>Express JS</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>MongoDB</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>Mongoose</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>Firebase</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>MySQL</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>Python</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>REST API</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>Moment JS</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaNodeJs className="skill-details-icon" />
-                                <div>
-                                    <h4>Postman</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
+                            {
+                                Backend.map((skill, i) => (
+                                    <article className="skill-details" key={i}>
+                                        <FaNodeJs className="skill-details-icon" />
+                                        <div>
+                                            <h4>{skill.name}</h4>
+                                            <small className="skill-level">
+                                                {
+                                                    skill.level === "1" ? "Beginner" :
+                                                    skill.level === "2" ? "Intermediate" :
+                                                    skill.level === "3" ? "Experienced" : ""
+                                                }
+                                            </small>
+                                        </div>
+                                    </article>
+                                ))
+                            }
                         </div>
                     </div>
 
                     <div className="skills-cloud">
                         <h3>Cloud Technologies</h3>
                         <div className="skills-content">
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>VPC</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
+                            {
+                                Cloud.map((skill, i) => (
+                                    <article className="skill-details" key={i}>
+                                        <FaAws className="skill-details-icon" />
+                                        <div>
+                                            <h4>{skill.name}</h4>
+                                            <small className="skill-level">
+                                                {
+                                                    skill.level === "1" ? "Beginner" :
+                                                    skill.level === "2" ? "Intermediate" :
+                                                    skill.level === "3" ? "Experienced" : ""
+                                                }
+                                            </small>
+                                        </div>
+                                    </article>
+                                ))
+                            }
+                        </div>
+                    </div>
 
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>EC2</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>S3</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>Route 53</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>EBS</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>EFS</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>Nginx</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>Apache</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>SES</h4>
-                                    <small className="skill-level">Experienced</small>
-                                </div>
-                            </article>
-
-                            <article className="skill-details">
-                                <FaAws className="skill-details-icon" />
-                                <div>
-                                    <h4>Cloud Watch</h4>
-                                    <small className="skill-level">Intermediate</small>
-                                </div>
-                            </article>
+                    <div className="skills-others">
+                        <h3>Miscellaneous Technologies</h3>
+                        <div className="skills-content">
+                            {
+                                Others.map((skill, i) => (
+                                    <article className="skill-details" key={i}>
+                                        <FaNodeJs className="skill-details-icon" />
+                                        <div>
+                                            <h4>{skill.name}</h4>
+                                            <small className="skill-level">
+                                                {
+                                                    skill.level === "1" ? "Beginner" :
+                                                    skill.level === "2" ? "Intermediate" :
+                                                    skill.level === "3" ? "Experienced" : ""
+                                                }
+                                            </small>
+                                        </div>
+                                    </article>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>

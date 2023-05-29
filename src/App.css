@@ -478,7 +478,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -508,6 +508,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
+  margin-left: 15%;
 }
 
 .skill-details {
@@ -572,6 +573,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .skills-content {
     grid-template-columns: 1fr;
+    margin-left: -5% !important;
   }
 
   .skill-details{

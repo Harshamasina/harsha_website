@@ -491,8 +491,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skills-container > div:hover {
-  background: transparent;
-  border-color: #0E6E59;
+  background: rgba(14, 110, 89, .75);
   cursor: default;
   transform: scale(1.05);
 }
@@ -621,7 +620,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -634,8 +633,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .portfolio-item:hover {
-  background: transparent;
-  border-color: #0E6E59;
+  background: rgba(14, 110, 89, .75);
   cursor: default;
   transform: scale(1.05);
 }
@@ -643,21 +641,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .portfolio-item-cb img {
   border-radius: 1.5rem;
   overflow: hidden;
-  width: 60%;
-  height: 50%;
-  display: flex;
-  /* justify-content: center; */
-  margin-left: 15%;
+  width: 40%;
+  height: 20%;
+  margin-left: 30%;
 }
 
 .portfolio-item-ap img {
   border-radius: 1.5rem;
   overflow: hidden;
-  width: 95%;
-  height: 130px;
+  width: 75%;
+  height: 110px;
   display: flex;
-  /* justify-content: center; */
-  margin-left: 5%;
+  justify-content: center;
+  margin-left: 15%;
 }
 
 .portfolio-item h3 {
@@ -676,6 +672,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   gap: 3rem;
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .btn-code {
@@ -722,8 +719,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 120% !important;
   }
 
+  .portfolio-item-cb img{
+    width: 60%;
+    height: 40%;
+    margin-left: 15% !important;
+  }
+
   .portfolio-item-ap img{
-    height: 110px;
+    width: 100%;
+    height: 90px;
+    margin-left: 1%;
   }
 
   .portfolio-item-cta{
@@ -787,8 +792,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contact-option:hover{
-  background: transparent;
-  border-color: #0E6E59;
+  background: rgba(14, 110, 89, .75);
   cursor: default;
   transform: scale(1.05);
 }
@@ -818,6 +822,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact-option a:hover{
   color: #15B39D;
+  text-decoration: underline;
+  text-decoration-color: #15B39D;
 }
 
 form{
@@ -935,7 +941,6 @@ textarea::placeholder{
   }
 
   .contact-container{
-    /* grid-template-columns: 1fr; */
     display: flex !important;
     justify-content: center !important;
     flex-direction: column;
@@ -948,7 +953,7 @@ textarea::placeholder{
   }
 
   .contact-options h4{
-    font-size: 25px;
+    font-size: 2.5vh;
   }
 
   .contact-option h5{
@@ -957,7 +962,7 @@ textarea::placeholder{
 
   .btn-submit{
     font-size: 20px;
-    width: 60%;
+    width: 70% !important;
   }
 }
 

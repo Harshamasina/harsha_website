@@ -31,7 +31,7 @@ const Banner = () => {
                                         />
                                     </h2>
                                     <p>
-                                        I am a MERN stack developer with a solid background in web development and a love for creating sophisticated web applications. Additionally, I am familiar with the AWS Solution Architecture. I worked for Cellix Bio Pvt Ltd as a Full Stack Developer. Upcoming IT Graduate Student in Missouri University of Science and Technology Rolla, MO, USA.
+                                        I am a MERN stack developer with a solid background in web development and a love for creating sophisticated web applications. Additionally, I am familiar with the AWS Solution Architecture. I worked for Cellix Bio Pvt Ltd as a Full Stack Developer. Upcoming IT Graduate Student in Missouri University of Science and Technology MO, USA.
                                     </p>
                                     <Router>
                                         <HashLink to="/#resume" style={{textDecoration: 'none'}}>

@@ -18,7 +18,7 @@ const Resume = () => {
                         <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/drawing.png" alt="Header Img" />
                     </div>
                     <div className='resume-btn'>
-                        <a href="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/Harsha's+Resume.pdf" download="resume" target="_blank">
+                        <a href="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/Resume.pdf" download="resume" target="_blank">
                             <span>View or Download My Resume <MdOutlineDownload /></span>
                         </a>
                     </div>

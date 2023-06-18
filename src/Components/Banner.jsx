@@ -10,7 +10,15 @@ const Banner = () => {
     return(
         <div>
             <section className="banner" id="home">
-                <video className="background-video" autoPlay muted loop playsInline>
+                <video 
+                    className="background-video" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    controls
+                    preload='auto'
+                >
                     <source src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/Green+Gradient+Video.mp4" type="video/mp4" />
                 </video>
                 <div class="blur-overlay"></div>

@@ -16,6 +16,23 @@ const Projects = () => {
                 <p>My Recent Work</p>
                 <div className="container portfolio-container">
                     <article className="portfolio-item">
+                        <div className="portfolio-item-st">
+                            <a href="/">
+                                <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/Chatterbox/snaptube-high-resolution-logo-color-on-transparent-background.png" alt="Cellix Bio"/>
+                            </a>
+                        </div>
+                        <h3>SnapTube</h3>
+                        <p>Built this Vite - React Web Application using Material Ui. This Web App functions similarly to YouTube as a video sharing platform. 
+                            This app fetches data from the Rapid API. This App shows videos from several genres and can search for any video which is there in youtube. 
+                            We can also view videos with this app and this app also responsive on all devices.  We can also see videos from certain content creators and stats about that channel.
+                        </p>
+                        <div className="portfolio-item-cta">
+                            <a href="https://github.com/Harshamasina/SnapTube" target="_blank" className="btn-code"><BsGithub /> Code</a>
+                            <a href="/" className="btn-code"><MdOutlineWeb /> Live Page</a>
+                        </div>
+                    </article>
+
+                    <article className="portfolio-item">
                         <div className="portfolio-item-cb">
                             <a href="https://mis.cellixbio.info/" target="_blank" >
                                 <img src="https://cellixbio-assets.s3.ap-south-1.amazonaws.com/Web+Images/CellixBio.Icon.png" alt="Cellix Bio"/>

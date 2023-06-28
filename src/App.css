@@ -263,6 +263,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -1;
 }
 
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .blur-overlay {
   position: absolute;
   top: 0;
@@ -338,7 +348,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
-.banner img {
+.coder-img img {
   animation: updown 3s linear infinite;
   width: 600px !important;
 }
@@ -360,7 +370,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 35px;
   }
 
-  .banner img{
+  .coder-img img{
     width: 550px !important;
     margin-left: -25% !important;
   }

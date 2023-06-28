@@ -3,25 +3,41 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import RotatingText from 'react-rotating-text';
+import { useEffect, useState } from 'react';
 
 const Banner = () => {
     const textOptions = ['MERN Stack', 'Full Stack',  'Web Developer', 'AWS Solution Architect'];
-    
+    const [isIOSorMac, setIsIOSorMac] = useState(false);
+
+    useEffect(() => {
+        const iOSorMacAgent = /(Mac|iPhone|iPod|iPad)/i.test(navigator.userAgent);
+        setIsIOSorMac(iOSorMacAgent);
+    }, []);
+
     return(
         <div>
             <section className="banner" id="home">
-                <video 
-                    className="background-video" 
-                    autoPlay 
-                    muted 
-                    loop 
-                    playsInline
-                    controls
-                    preload='auto'
-                >
-                    <source src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/Green+Gradient+Video.mp4" type="video/mp4" />
-                </video>
-                <div class="blur-overlay"></div>
+                {
+                    isIOSorMac ? (
+                            <img
+                                className="background-image"
+                                src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/ios+gradient.png"
+                                alt="Background Image"
+                            />
+                    ) : (
+                        <video
+                            className="background-video"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload="auto"
+                        >
+                            <source src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/Green+Gradient+Video.mp4" type="video/mp4" />
+                        </video>
+                    )
+                }
+                <div className="blur-overlay"></div>
                 <Container>
                     <div className='content'>
                         <Row className="aligh-items-center">
@@ -50,7 +66,7 @@ const Banner = () => {
                             </Col>
 
                             <Col xs={12} md={6} xl={5}>
-                                <div>
+                                <div className='coder-img'>
                                     <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/coder.png" alt="Header Img" />
                                 </div>
                             </Col>

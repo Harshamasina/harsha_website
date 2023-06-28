@@ -10,6 +10,7 @@ const Projects = () => {
                 <meta name="description" content="Projects built by Harsha Masina" />
                 <meta name='keywords' content='Projects related Cellix Bio, AvacaPharma, Cellix Bio MIS' />
             </Helmet>
+            
             <section className="projects" id="projects">
                 <h2><TbApps /></h2>
                 <h2>Portfolio</h2>
@@ -17,7 +18,7 @@ const Projects = () => {
                 <div className="container portfolio-container">
                     <article className="portfolio-item">
                         <div className="portfolio-item-st">
-                            <a href="/">
+                            <a href="https://snap-tube.netlify.app/">
                                 <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/Chatterbox/snaptube-high-resolution-logo-color-on-transparent-background.png" alt="Cellix Bio"/>
                             </a>
                         </div>
@@ -28,7 +29,7 @@ const Projects = () => {
                         </p>
                         <div className="portfolio-item-cta">
                             <a href="https://github.com/Harshamasina/SnapTube" target="_blank" className="btn-code"><BsGithub /> Code</a>
-                            <a href="/" className="btn-code"><MdOutlineWeb /> Live Page</a>
+                            <a href="https://snap-tube.netlify.app/" className="btn-code"><MdOutlineWeb /> Live Page</a>
                         </div>
                     </article>
 

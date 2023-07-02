@@ -29,7 +29,7 @@ const Projects = () => {
                         </p>
                         <div className="portfolio-item-cta">
                             <a href="https://github.com/Harshamasina/SnapTube" target="_blank" className="btn-code"><BsGithub /> Code</a>
-                            <a href="https://snap-tube.netlify.app/" className="btn-code"><MdOutlineWeb /> Live Page</a>
+                            <a href="https://snap-tube.netlify.app/" className="btn-code" target="_blank"><MdOutlineWeb /> Live Page</a>
                         </div>
                     </article>
 

@@ -37,6 +37,7 @@ const Banner = () => {
                         </video>
                     )
                 }
+                
                 <div className="blur-overlay"></div>
                 <Container>
                     <div className='content'>

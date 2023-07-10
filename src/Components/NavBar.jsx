@@ -27,7 +27,7 @@ const NavBar = () => {
         <Router>
             <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
                 <Container>
-                    <Navbar.Brand href="/Harsha_Portfolio/">
+                    <Navbar.Brand href="/">
                         <img className='nav-img' src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/harsha-logo-font-white.png" alt="Logo" />
                     </Navbar.Brand>
                     

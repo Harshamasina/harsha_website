@@ -41,7 +41,7 @@ const Skills = () => {
         },
         {
             name: "Vite",
-            level: "3"
+            level: "2"
         },
         {
             name: "SEO",

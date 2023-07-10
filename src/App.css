@@ -711,6 +711,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: scale(1.01);
 }
 
+.button-span{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.portfolio-item-mis {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.triple-btn-code {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px 20px 20px 25px;
+  transition: all .5s ease;
+}
+
+.triple-btn-code:hover {
+  color: #ffffff;
+  background: #15B39D;
+  border: transparent;
+  transform: scale(1.01);
+}
+
 @media screen and (max-width: 1024px) {
   .portfolio-container{
     grid-template-columns: 1fr 1fr;
@@ -762,7 +794,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-top: 1rem;
   }
 
+  .portfolio-item-mis{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
   .btn-code{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .triple-btn-code{
     font-size: 20px;
     text-align: center;
   }

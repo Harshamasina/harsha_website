@@ -76,7 +76,8 @@ const Contact = () => {
                         <article className="contact-option">
                             <MdOutlineWhatsapp className="contact-option-icon" />
                             <h3>Whatsapp</h3>
-                            <h4>+91-9032330333</h4>
+                            <h4>U.S: +1 (573)-647-1010</h4>
+                            <h4>IND: +91-9032330333</h4>
                             <a href="https://api.whatsapp.com/send?phone=+919032330333" target="_blank">Send a message in Whatsapp</a> 
                         </article>
                     </div> 

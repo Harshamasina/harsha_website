@@ -16,7 +16,7 @@ const Footer = () => {
             <Container className="footer-container">
                 <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/harsha-logo-font.png" alt="Logo" onClick={onScrollTop} style={{ cursor: 'pointer' }} />
                 <div className="socials">
-                    <a href="https://www.linkedin.com/in/masina-mani-harsha-349a1816b/" target="_blank" rel="noreferrer" aria-label="Navigate to Linkedin Webpage"><BsLinkedin /></a>
+                    <a href="https://www.linkedin.com/in/harsha-masina/" target="_blank" rel="noreferrer" aria-label="Navigate to Linkedin Webpage"><BsLinkedin /></a>
                     <a href="https://github.com/Harshamasina" target="_blank" rel="noreferrer" aria-label="Navigate to Github Page"><BsGithub /></a>
                     <a href="https://www.facebook.com/mani.harsha.333?mibextid=ZbWKwL" target="_blank" rel="noreferrer" aria-label="Navigate to Facebook Page"><BsFacebook /></a>
                     <a href="https://instagram.com/harsha_masina?igshid=ZGUzMzM3NWJiOQ==" target="_blank" rel="noreferrer" aria-label="Navigate to Instagram Page"><BsInstagram /></a>

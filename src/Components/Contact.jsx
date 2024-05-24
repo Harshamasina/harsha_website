@@ -63,6 +63,7 @@ const Contact = () => {
                             <MdMailOutline className="contact-option-icon" />
                             <h3>Email</h3>
                             <h4>harshamasina1999@gmail.com</h4>
+                            <h4>mhmcft@umsystem.edu</h4>
                             <a href="mailto:harshamasina1999@gmail.com" target="_blank">Send a Mail</a> 
                         </article>
 

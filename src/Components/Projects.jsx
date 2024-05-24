@@ -76,6 +76,20 @@ const Projects = () => {
                             <a href="https://www.avacapharma.com/" target="_blank" className="btn-code"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
                     </article>
+
+                    <article className="portfolio-item">
+                        <div className="portfolio-item-st">
+                            <a href="https://express24hrplumbingandelectrical.com" target="_blank">
+                                <img src="https://express24hrplumbingandelectrical.com/assets/plumbing_logo-DRrN-JtH.png" alt="Cellix Bio" target="_blank"/>
+                            </a>
+                        </div>
+                        <h3>Express 24 Plumbing and Electrical</h3>
+                        <p>This Vite-React Web App is a single page application which displays the portfolio and services provided by Express 24 Plumbing and Electrical which offers services in Mid West of USA. This app mainly focuses on Search Engine Optimization(SEO). In Page Speed Insights this web app scored 100% in SEO, 95% in accessibility, 96% in Overall Performance. This helps in improvement of SEO and enables the website to reach to wider customers.</p>
+                        <div className="portfolio-item-cta">
+                            <a href="https://github.com/Harshamasina/Express24_Plumbing" target="_blank" className="btn-code"><span className="button-span"><BsGithub /> Code</span></a>
+                            <a href="https://express24hrplumbingandelectrical.com" className="btn-code" target="_blank"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
+                        </div>
+                    </article>
                 </div>
             </section>
         </div>

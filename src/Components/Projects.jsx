@@ -90,6 +90,20 @@ const Projects = () => {
                             <a href="https://express24hrplumbingandelectrical.com" className="btn-code" target="_blank"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
                     </article>
+
+                    <article className="portfolio-item">
+                        <div className="portfolio-item-st">
+                            <a href="https://expresswaterdamagecleaning.com/" target="_blank">
+                                <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/logo.png" alt="Cellix Bio" target="_blank"/>
+                            </a>
+                        </div>
+                        <h3>Express 24 Water Damage and Cleanup</h3>
+                        <p>The portfolio and services offered by Express 24 Water Damage and Cleanup, Search Engine Optimization is the primary emphasis of this app (SEO). This online application received 100% in SEO, 97% in accessibility, and 95% in overall performance according to Page Speed Insights. This boosts search engine optimisation and makes it possible for the website to inform a larger audience about water damage, mould removal, flood damage, and fire damage repair.</p>
+                        <div className="portfolio-item-cta">
+                            <a href="https://github.com/Harshamasina/express24_watering" target="_blank" className="btn-code"><span className="button-span"><BsGithub /> Code</span></a>
+                            <a href="https://expresswaterdamagecleaning.com/" className="btn-code" target="_blank"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
+                        </div>
+                    </article>
                 </div>
             </section>
         </div>

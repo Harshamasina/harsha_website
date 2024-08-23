@@ -19,7 +19,6 @@ const App = () => {
           <meta name='keywords' content='Portfolio, Harsha Masina, Portfolio of Harsha Masina' />
         </Helmet>
         <NavBar />
-        {/* harshamasina */}
         <Banner />
         <Skills />
         <Projects />

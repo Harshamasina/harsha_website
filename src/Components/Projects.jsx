@@ -77,7 +77,7 @@ const Projects = () => {
                         </div>
                     </article>
 
-                    {/* <article className="portfolio-item">
+                    <article className="portfolio-item">
                         <div className="portfolio-item-st">
                             <a href="https://express24hrplumbingandelectrical.com" target="_blank">
                                 <img src="https://express24hrplumbingandelectrical.com/assets/plumbing_logo-DRrN-JtH.png" alt="Cellix Bio" target="_blank"/>
@@ -103,7 +103,7 @@ const Projects = () => {
                             <a href="https://github.com/Harshamasina/express24_watering" target="_blank" className="btn-code"><span className="button-span"><BsGithub /> Code</span></a>
                             <a href="https://expresswaterdamagecleaning.com/" className="btn-code" target="_blank"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
-                    </article> */}
+                    </article>
                 </div>
             </section>
         </div>

@@ -127,7 +127,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
-  color: #ffffff;
+  color: #5ae4a8;
 }
 
 span.navbar-text {
@@ -283,7 +283,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(200px);
+  background-color: rgba(24, 46, 53, .7);
+  z-index: 0;
 }
 
 .banner .content {

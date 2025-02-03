@@ -78,8 +78,8 @@ const NavBar = () => {
                             <Nav.Link
                                 as={HashLink}
                                 to="/#contact"
-                                className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('resume')}
+                                className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('contact')}
                             >
                                 CONTACT
                             </Nav.Link>

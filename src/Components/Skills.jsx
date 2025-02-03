@@ -1,289 +1,83 @@
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { FaAws } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaAws, FaGitAlt } from "react-icons/fa";
 import { BiBrain } from "react-icons/bi";
 import { Helmet } from "react-helmet";
-import { FaGitAlt } from "react-icons/fa";
+import skillsJson from "../Data/Skills.json"; // Adjust the path as needed
 
 const Skills = () => {
-    const FrontEnd = [
-        {
-            name: "HTML",
-            level: "3"
-        },
-        {
-            name: "CSS",
-            level: "2"
-        },
-        {
-            name: "Bootstrap",
-            level: "2"
-        },
-        {
-            name: "React Bootstrap",
-            level: "3"
-        },
-        {
-            name: "SASS",
-            level: "1"
-        },
-        {
-            name: "Material UI",
-            level: "1"
-        },
-        {
-            name: "JavaScript",
-            level: "2"
-        },
-        {
-            name: "React JS",
-            level: "2"
-        },
-        {
-            name: "Vite",
-            level: "2"
-        },
-        {
-            name: "SEO",
-            level: "1"
-        }
-    ];
+  const { skillsData } = skillsJson;
+  const iconMapping = {
+    FaReact: FaReact,
+    FaNodeJs: FaNodeJs,
+    FaAws: FaAws,
+    FaGitAlt: FaGitAlt,
+  };
 
-    const Backend = [
-        {
-            name: "Node JS",
-            level: "2"
-        },
-        {
-            name: "Express JS",
-            level: "2"
-        },
-        {
-            name: "MongoDB",
-            level: "2"
-        },
-        {
-            name: "Mongoose",
-            level: "2"
-        },
-        {
-            name: "Firebase",
-            level: "2"
-        },
-        {
-            name: "MySQL",
-            level: "1"
-        },
-        {
-            name: "Python",
-            level: "2"
-        },
-        {
-            name: "REST API",
-            level: "3"
-        },
-        {
-            name: "Moment JS",
-            level: "3"
-        },
-        {
-            name: "Multer",
-            level: "1"
-        }
-    ];
+  const getSkillLevel = (level) => {
+    switch (level) {
+      case "1":
+        return "Beginner";
+      case "2":
+        return "Intermediate";
+      case "3":
+        return "Experienced";
+      default:
+        return "";
+    }
+  };
 
-    const Cloud = [
-        {
-            name: "VPC",
-            level: "2"
-        },
-        {
-            name: "EC2",
-            level: "3"
-        },
-        {
-            name: "S3",
-            level: "2"
-        },
-        {
-            name: "Route 53",
-            level: "3"
-        },
-        {
-            name: "EBS",
-            level: "2"
-        },
-        {
-            name: "EFS",
-            level: "2"
-        },
-        {
-            name: "Nginx",
-            level: "2"
-        },
-        {
-            name: "Apache",
-            level: "1"
-        },
-        {
-            name: "SES",
-            level: "1"
-        },
-        {
-            name: "Cloud Watch",
-            level: "2"
-        }
-    ];
+  return (
+    <div>
+      <Helmet>
+        <meta name="description" content="Skills of Harsha Masina" />
+        <meta
+          name="keywords"
+          content="Skills, Skills of Harsha Masina, Frontend, Backend, Fullstack, Javascript, React, NodeJs, Express, MongoDB, MySQL, Java, Python, C#, C++, C, HTML, CSS, Bootstrap, SASS, Material UI, Redux, Redux-Toolkit, Redux-Saga, Jest, Enzyme, React Testing Library"
+        />
+      </Helmet>
 
-    const Others = [
-        {
-            name: "Git",
-            level: "2"
-        },
-        {
-            name: "GitHub",
-            level: "2"
-        },
-        {
-            name: "VS Code",
-            level: "2"
-        },
-        {
-            name: "Terminal",
-            level: "2"
-        },
-        {
-            name: "Linux",
-            level: "2"
-        },
-        {
-            name: "Windows",
-            level: "3"
-        },
-        {
-            name: "Postman",
-            level: "3"
-        },
-        {
-            name: "MongoDB Atlas",
-            level: "3"
-        },
-        {
-            name: "GoDaddy",
-            level: "3"
-        },
-        {
-            name: "Putty",
-            level: "1"
-        }
-    ];
+      <section className="skill" id="skills">
+        <h2>
+          <BiBrain />
+        </h2>
+        <h2>Skills</h2>
+        <p>
+          I have worked with a variety of technologies and frameworks. I am familiar with the following:
+        </p>
+        <div className="skills-container">
+            {
+                skillsData.map((category, catIndex) => {
+                const IconComponent = iconMapping[category.icon];
 
-    return(
-        <div>
-            <Helmet>
-                <meta name="description" content="Skills of Harsha Masina" />
-                <meta name='keywords' content='Skills, Skills of Harsha Masina, Frontend, Backend, Fullstack, Javascript, React, NodeJs, Express, MongoDB, MySQL, Java, Python, C#, C++, C, HTML, CSS, Bootstrap, SASS, Material UI, Redux, Redux-Toolkit, Redux-Saga, Jest, Enzyme, React Testing Library,' />
-            </Helmet>
-            <section className="skill" id="skills">
-                <h2><BiBrain /></h2>
-                <h2>Skills</h2>
-                <p>I have worked with a variety of technologies and frameworks. I am familiar with the following</p>
-                <div className="skills-container">
-                    <div className="skills-frontend">
-                        <h3>Frontend Development</h3>
+                return (
+                    <div>
+                        <h3>{category.category}</h3>
                         <div className="skills-content">
                             {
-                                FrontEnd.map((skill, i) => (
-                                    <article className="skill-details" key={i}>
-                                        <FaReact className="skill-details-icon" />
-                                        <div>
-                                            <h4>{skill.name}</h4>
-                                            <small className="skill-level">
-                                                {
-                                                    skill.level === "1" ? "Beginner" :
-                                                    skill.level === "2" ? "Intermediate" :
-                                                    skill.level === "3" ? "Experienced" : ""
-                                                }
-                                            </small>
-                                        </div>
+                                category.skills.map((skill, index) => (
+                                    <article className="skill-details" key={index}>
+                                    {
+                                        IconComponent && (
+                                            <IconComponent className="skill-details-icon" />
+                                        )
+                                    }
+                        
+                                    <div>
+                                        <h4>{skill.name}</h4>
+                                        <small className="skill-level">
+                                        {getSkillLevel(skill.level)}
+                                        </small>
+                                    </div>
                                     </article>
                                 ))
                             }
                         </div>
                     </div>
-
-                    <div className="skills-backend">
-                        <h3>Backend Development</h3>
-                        <div className="skills-content">
-                            {
-                                Backend.map((skill, i) => (
-                                    <article className="skill-details" key={i}>
-                                        <FaNodeJs className="skill-details-icon" />
-                                        <div>
-                                            <h4>{skill.name}</h4>
-                                            <small className="skill-level">
-                                                {
-                                                    skill.level === "1" ? "Beginner" :
-                                                    skill.level === "2" ? "Intermediate" :
-                                                    skill.level === "3" ? "Experienced" : ""
-                                                }
-                                            </small>
-                                        </div>
-                                    </article>
-                                ))
-                            }
-                        </div>
-                    </div>
-
-                    <div className="skills-cloud">
-                        <h3>Cloud Technologies</h3>
-                        <div className="skills-content">
-                            {
-                                Cloud.map((skill, i) => (
-                                    <article className="skill-details" key={i}>
-                                        <FaAws className="skill-details-icon" />
-                                        <div>
-                                            <h4>{skill.name}</h4>
-                                            <small className="skill-level">
-                                                {
-                                                    skill.level === "1" ? "Beginner" :
-                                                    skill.level === "2" ? "Intermediate" :
-                                                    skill.level === "3" ? "Experienced" : ""
-                                                }
-                                            </small>
-                                        </div>
-                                    </article>
-                                ))
-                            }
-                        </div>
-                    </div>
-
-                    <div className="skills-others">
-                        <h3>Miscellaneous Technologies</h3>
-                        <div className="skills-content">
-                            {
-                                Others.map((skill, i) => (
-                                    <article className="skill-details" key={i}>
-                                        <FaGitAlt className="skill-details-icon" />
-                                        <div>
-                                            <h4>{skill.name}</h4>
-                                            <small className="skill-level">
-                                                {
-                                                    skill.level === "1" ? "Beginner" :
-                                                    skill.level === "2" ? "Intermediate" :
-                                                    skill.level === "3" ? "Experienced" : ""
-                                                }
-                                            </small>
-                                        </div>
-                                    </article>
-                                ))
-                            }
-                        </div>
-                    </div>
-                </div>
-            </section>
+                );
+            })}
         </div>
-    );
+      </section>
+    </div>
+  );
 };
 
 export default Skills;

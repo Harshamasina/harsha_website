@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet';
 import { MdOutlineDownload } from 'react-icons/md';
 import { TbFileReport } from 'react-icons/tb';
+import resume from "../assets/resume.png";
+import resumePdf from '../assets/Harsha_Resume.pdf';
 
 const Resume = () => {
     return(
@@ -14,11 +16,11 @@ const Resume = () => {
                 <h2>Resume</h2>
                 <p>Check out my resume</p>
                 <div className="resume-container">
-                    <div>
-                        <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/drawing.png" alt="Header Img" />
+                    <div className='resume_img'>
+                        <img src={resume} alt="Header Img" />
                     </div>
                     <div className='resume-btn'>
-                        <a href="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/Harsha's+Resume.pdf" download="resume" target="_blank">
+                        <a href={resumePdf} target="_blank" rel="noopener noreferrer">
                             <span>View or Download My Resume <MdOutlineDownload /></span>
                         </a>
                     </div>

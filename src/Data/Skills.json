@@ -1,0 +1,77 @@
+{
+    "skillsData": [
+      {
+        "category": "Frontend Development",
+        "icon": "FaReact",
+        "skills": [
+          { "name": "HTML", "level": "3" },
+          { "name": "CSS", "level": "2" },
+          { "name": "Bootstrap", "level": "2" },
+          { "name": "React Bootstrap", "level": "3" },
+          { "name": "SASS", "level": "1" },
+          { "name": "Material UI", "level": "1" },
+          { "name": "JavaScript", "level": "2" },
+          { "name": "React JS", "level": "2" },
+          { "name": "Vite", "level": "2" },
+          { "name": "SEO", "level": "1" },
+          {"name": "Paypal Gateway", "level": "2"},
+          {"name": "NextJS", "level": "1"}
+        ]
+      },
+      {
+        "category": "Backend Development",
+        "icon": "FaNodeJs",
+        "skills": [
+          { "name": "Node JS", "level": "2" },
+          { "name": "Express JS", "level": "2" },
+          { "name": "MongoDB", "level": "2" },
+          { "name": "Mongoose", "level": "2" },
+          { "name": "Firebase", "level": "2" },
+          { "name": "MySQL", "level": "1" },
+          { "name": "Python", "level": "2" },
+          { "name": "REST API", "level": "3" },
+          { "name": "Moment JS", "level": "3" },
+          { "name": "Multer", "level": "1" },
+          {"name": "Bcrypt", "level": "1"},
+          {"name": "Stripe", "level": "1"}
+        ]
+      },
+      {
+        "category": "Cloud Technologies",
+        "icon": "FaAws",
+        "skills": [
+          { "name": "VPC", "level": "2" },
+          { "name": "EC2", "level": "3" },
+          { "name": "S3", "level": "2" },
+          { "name": "Route 53", "level": "3" },
+          { "name": "EBS", "level": "2" },
+          { "name": "EFS", "level": "2" },
+          { "name": "Nginx", "level": "2" },
+          { "name": "Apache", "level": "1" },
+          { "name": "SES", "level": "1" },
+          { "name": "Cloud Watch", "level": "2" },
+          { "name": "AWS Labda", "level": "1" },
+          { "name": "Containers", "level": "2" }
+        ]
+      },
+      {
+        "category": "Miscellaneous Technologies",
+        "icon": "FaGitAlt",
+        "skills": [
+          { "name": "C++", "level": "2" },
+          { "name": "Excel", "level": "2" },
+          { "name": "Git", "level": "2" },
+          { "name": "PowerBI", "level": "2" },
+          { "name": "VS Code", "level": "2" },
+          { "name": "Terminal", "level": "2" },
+          { "name": "Linux", "level": "2" },
+          { "name": "Windows", "level": "3" },
+          { "name": "Postman", "level": "3" },
+          { "name": "MongoDB Atlas", "level": "3" },
+          { "name": "GoDaddy", "level": "3" },
+          { "name": "Putty", "level": "1" }
+        ]
+      }
+    ]
+}
+  

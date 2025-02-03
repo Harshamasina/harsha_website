@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { BsGithub } from "react-icons/bs";
+import harsha_logo_white from "../assets/harsha_logo_white.png";
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -28,7 +30,7 @@ const NavBar = () => {
             <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
                 <Container>
                     <Navbar.Brand href="/">
-                        <img className='nav-img' src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/harsha-logo-font-white.png" alt="Logo" />
+                        <img className='nav-img' src={harsha_logo_white} alt="Logo" />
                     </Navbar.Brand>
                     
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -72,14 +74,23 @@ const NavBar = () => {
                             >
                                 RESUME
                             </Nav.Link>
+
+                            <Nav.Link
+                                as={HashLink}
+                                to="/#contact"
+                                className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('resume')}
+                            >
+                                CONTACT
+                            </Nav.Link>
                         </Nav>
 
                         <span className="navbar-text">
-                            <HashLink to="/#contact">
+                            <>
                                 <button className="vvd">
-                                <span>Let's Connect</span>
+                                    <span><a href='https://github.com/Harshamasina' target='_blank'>Github <BsGithub /></a></span>
                                 </button>
-                            </HashLink>
+                            </>
                         </span>
                     </Navbar.Collapse>
                 </Container>

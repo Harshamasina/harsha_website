@@ -1,0 +1,123 @@
+{
+    "projectsData": [
+      {
+        "title": "Cellix Bio MIS",
+        "image": "https://cellixbio-assets.s3.ap-south-1.amazonaws.com/Web+Images/CellixBio.Icon.png",
+        "alt": "Cellix Bio",
+        "description": "Built and hosted this Web App in AWS EC2. This Data Management Web App which has CRUD operations contains Cellix Bio's each Patent's life Cycle. This MIS App features OTP Login where certain employees in the company are able to access the web app. This app allows employees to know the due dates and annuity dates of the patents filed in 14 different countries and also create custom deadlines. It also features Granted, Under Examination, and Rejected statuses for each patent.",
+        "links": [
+          {
+            "label": "Client Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/Harshamasina/Cellix_MIS_Client"
+          },
+          {
+            "label": "Server Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/Harshamasina/Cellix_MIS"
+          },
+          {
+            "label": "Live Page",
+            "icon": "MdOutlineWeb",
+            "url": "https://mis.cellixbio.info/"
+          }
+        ]
+      },
+      {
+        "title": "Cellix Bio",
+        "image": "https://cellixbio-assets.s3.ap-south-1.amazonaws.com/Web+Images/CellixBio.Icon.png",
+        "alt": "Cellix Bio",
+        "description": "Built and hosted Cellix Bio Single Page Web Application in AWS EC2. This app contains the company's Portfolio, Pipeline, Intellectual Property (IP), Media, Contact Page, and insights related to Cellix Bio. Cellix Bio has over 650 International Patents and 185+ U.S. Patents, with details on Therapeutic Areas, Formulas, Drugs, Compounds, Methods of Making, and Claims. All 11,000+ images are stored in AWS S3.",
+        "links": [
+          {
+            "label": "Client Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/ssvamsee/Cellix_Bio"
+          },
+          {
+            "label": "Server Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/ssvamsee/Cellix_Bio_Services"
+          },
+          {
+            "label": "Live Page",
+            "icon": "MdOutlineWeb",
+            "url": "https://cellixbio.com/"
+          }
+        ]
+      },
+      {
+        "title": "SnapTube",
+        "image": "https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/Chatterbox/snaptube-high-resolution-logo-color-on-transparent-background.png",
+        "alt": "SnapTube",
+        "description": "Built this Vite-React web application using Material UI. It functions similarly to YouTube as a Google SignIn video-sharing platform. The app fetches data from the Rapid API, displays videos from several genres, allows video searches on YouTube, and is responsive on all devices. It also displays videos from select content creators with channel statistics.",
+        "links": [
+          {
+            "label": "Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/Harshamasina/SnapTube"
+          },
+          {
+            "label": "Live Page",
+            "icon": "MdOutlineWeb",
+            "url": "https://snap-tube.netlify.app/"
+          }
+        ]
+      },
+      {
+        "title": "Avaca Pharma",
+        "image": "https://avaca-pharma-assets.s3.ap-south-1.amazonaws.com/Avaca+Pharma+Main+Logo.png",
+        "alt": "Avaca Pharma",
+        "description": "Built and hosted Avaca Pharma Informative Static Web App in AWS EC2. Avaca Pharma, an operating subsidiary of Cellix Bio, presents its Intellectual Property (IP), lab infrastructure, laboratory images, technology, services, and related media on this single-page application.",
+        "links": [
+          {
+            "label": "Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/Harshamasina/Avaca_Pharma"
+          },
+          {
+            "label": "Live Page",
+            "icon": "MdOutlineWeb",
+            "url": "https://www.avacapharma.com/"
+          }
+        ]
+      },
+      {
+        "title": "Express 24 Plumbing and Electrical",
+        "image": "https://express24hrplumbingandelectrical.com/assets/plumbing_logo-DRrN-JtH.png",
+        "alt": "Express 24 Plumbing and Electrical",
+        "description": "This Vite-React single page application displays the portfolio and services provided by Express 24 Plumbing and Electrical in the Mid West of USA. Focusing on SEO, the app scored 100% in SEO, 95% in accessibility, and 96% in overall performance on Page Speed Insights.",
+        "links": [
+          {
+            "label": "Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/Harshamasina/Express24_Plumbing"
+          },
+          {
+            "label": "Live Page",
+            "icon": "MdOutlineWeb",
+            "url": "https://express24hrplumbingandelectrical.com"
+          }
+        ]
+      },
+      {
+        "title": "Express 24 Water Damage and Cleanup",
+        "image": "https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/logo.png",
+        "alt": "Express 24 Water Damage and Cleanup",
+        "description": "This online application highlights the portfolio and services of Express 24 Water Damage and Cleanup. With a strong focus on SEO, it received scores of 100% in SEO, 97% in accessibility, and 95% in overall performance on Page Speed Insights, helping it reach a broader audience.",
+        "links": [
+          {
+            "label": "Code",
+            "icon": "BsGithub",
+            "url": "https://github.com/Harshamasina/express24_watering"
+          },
+          {
+            "label": "Live Page",
+            "icon": "MdOutlineWeb",
+            "url": "https://expresswaterdamagecleaning.com/"
+          }
+        ]
+      }
+    ]
+}
+  

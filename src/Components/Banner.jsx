@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import RotatingText from 'react-rotating-text';
 import { useEffect, useState } from 'react';
+import gradient_video from "../assets/gradient_video.mp4";
+import developer from "../assets/developer.png";
 
 const Banner = () => {
     const textOptions = ['MERN Stack', 'Full Stack',  'Web Developer', 'AWS Solution Architect'];
@@ -33,7 +35,7 @@ const Banner = () => {
                             playsInline
                             preload="auto"
                         >
-                            <source src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/Green+Gradient+Video.mp4" type="video/mp4" />
+                            <source src={gradient_video} type="video/mp4" />
                         </video>
                     )
                 }
@@ -68,7 +70,7 @@ const Banner = () => {
 
                             <Col xs={12} md={6} xl={5}>
                                 <div className='coder-img'>
-                                    <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/coder.png" alt="Header Img" />
+                                    <img src={developer} alt="Header Img" />
                                 </div>
                             </Col>
                         </Row>

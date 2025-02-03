@@ -15,8 +15,8 @@ const Projects = () => {
                 <h2><TbApps /></h2>
                 <h2>Portfolio</h2>
                 <p>Projects</p>
-                <div className="container portfolio-container">
-                    <article className="portfolio-item">
+                <div className="portfolio-container">
+                    <div className="portfolio-item">
                         <div className="portfolio-item-cb">
                             <a href="https://mis.cellixbio.info/" target="_blank" >
                                 <img src="https://cellixbio-assets.s3.ap-south-1.amazonaws.com/Web+Images/CellixBio.Icon.png" alt="Cellix Bio"/>
@@ -29,9 +29,9 @@ const Projects = () => {
                             <a href="https://github.com/Harshamasina/Cellix_MIS" target="_blank" className="triple-btn-code"><span className="button-span"><BsGithub /> Server Code</span></a>
                             <a href="https://mis.cellixbio.info/" target="_blank" className="triple-btn-code"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
-                    </article>
+                    </div>
 
-                    <article className="portfolio-item">
+                    <div className="portfolio-item">
                         <div className="portfolio-item-cb">
                             <a href="https://cellixbio.com/" target="_blank" >
                                 <img src="https://cellixbio-assets.s3.ap-south-1.amazonaws.com/Web+Images/CellixBio.Icon.png" alt="Cellix Bio"/>
@@ -44,9 +44,9 @@ const Projects = () => {
                             <a href="https://github.com/ssvamsee/Cellix_Bio_Services" target="_blank" className="triple-btn-code"><span className="button-span"><BsGithub /> Server Code</span></a>
                             <a href="https://cellixbio.com/" target="_blank" className="triple-btn-code"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
-                    </article>
+                    </div>
 
-                    <article className="portfolio-item">
+                    <div className="portfolio-item">
                         <div className="portfolio-item-st">
                             <a href="https://snap-tube.netlify.app/" target="_blank">
                                 <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/Chatterbox/snaptube-high-resolution-logo-color-on-transparent-background.png" alt="Cellix Bio" target="_blank"/>
@@ -61,9 +61,9 @@ const Projects = () => {
                             <a href="https://github.com/Harshamasina/SnapTube" target="_blank" className="btn-code"><span className="button-span"><BsGithub /> Code</span></a>
                             <a href="https://snap-tube.netlify.app/" className="btn-code" target="_blank"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
-                    </article>
+                    </div>
 
-                    <article className="portfolio-item">
+                    <div className="portfolio-item">
                         <div className="portfolio-item-ap">
                             <a href="https://www.avacapharma.com/" target="_blank">
                                 <img src="https://avaca-pharma-assets.s3.ap-south-1.amazonaws.com/Avaca+Pharma+Main+Logo.png" alt="Cellix Bio"/>
@@ -75,9 +75,9 @@ const Projects = () => {
                             <a href="https://github.com/Harshamasina/Avaca_Pharma" target="_blank" className="btn-code"><span className="button-span"><BsGithub /> Code</span></a>
                             <a href="https://www.avacapharma.com/" target="_blank" className="btn-code"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
-                    </article>
+                    </div>
 
-                    <article className="portfolio-item">
+                    <div className="portfolio-item">
                         <div className="portfolio-item-st">
                             <a href="https://express24hrplumbingandelectrical.com" target="_blank">
                                 <img src="https://express24hrplumbingandelectrical.com/assets/plumbing_logo-DRrN-JtH.png" alt="Cellix Bio" target="_blank"/>
@@ -89,9 +89,9 @@ const Projects = () => {
                             <a href="https://github.com/Harshamasina/Express24_Plumbing" target="_blank" className="btn-code"><span className="button-span"><BsGithub /> Code</span></a>
                             <a href="https://express24hrplumbingandelectrical.com" className="btn-code" target="_blank"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
-                    </article>
+                    </div>
 
-                    <article className="portfolio-item">
+                    <div className="portfolio-item">
                         <div className="portfolio-item-st">
                             <a href="https://expresswaterdamagecleaning.com/" target="_blank">
                                 <img src="https://cellix-bio-mis.s3.ap-south-1.amazonaws.com/portfolio/logo.png" alt="Cellix Bio" target="_blank"/>
@@ -103,7 +103,7 @@ const Projects = () => {
                             <a href="https://github.com/Harshamasina/express24_watering" target="_blank" className="btn-code"><span className="button-span"><BsGithub /> Code</span></a>
                             <a href="https://expresswaterdamagecleaning.com/" className="btn-code" target="_blank"><span className="button-span"><MdOutlineWeb /> Live Page</span></a>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </section>
         </div>

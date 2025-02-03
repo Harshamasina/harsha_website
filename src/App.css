@@ -376,8 +376,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .coder-img img{
-    width: 550px !important;
-    margin-left: -25% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
 
   .background-image{
@@ -766,14 +766,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .portfolio-container{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     margin-left: -10% !important;
     margin-top: 10% !important;
   }
 
   .portfolio-container > div{
     margin-top: 3%;
-    width: 120% !important;
+    width: 110% !important;
   }
 
   .portfolio-item-st img{
@@ -1144,7 +1144,7 @@ textarea::placeholder{
 
 @media screen and (max-width: 600px) {
   .resume{
-    height: 600px !important;
+    height: 700px !important;
   }
 
   .resume h2{
@@ -1157,6 +1157,21 @@ textarea::placeholder{
 
   .resume-container{
     grid-template-columns: 1fr;
+  }
+
+  .resume p{
+    margin-bottom: 20%;
+  }
+
+  .resume_img img{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  .resume-btn{
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* .resume-btn{

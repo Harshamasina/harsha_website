@@ -62,16 +62,27 @@ const Contact = () => {
                         <article className="contact-option">
                             <MdMailOutline className="contact-option-icon" />
                             <h3>Email</h3>
-                            <h4>harshamasina1999@gmail.com</h4>
+                            <h4>maniharsha3333@gmail.com</h4>
                             <h4>mhmcft@umsystem.edu</h4>
-                            <a href="mailto:harshamasina1999@gmail.com" target="_blank">Send a Mail</a> 
+                            <a
+                            href="mailto:maniharsha3333@gmail.com"
+                            rel="noopener noreferrer"
+                            >
+                            Send a Mail
+                            </a>
                         </article>
 
                         <article className="contact-option">
                             <AiOutlineLinkedin className="contact-option-icon" />
                             <h3>LinkedIn</h3>
                             <h4>Masina Mani Harsha</h4>
-                            <a href="https://www.linkedin.com/in/masina-mani-harsha-349a1816b/" target="_blank">Send a message in LinkedIn</a> 
+                            <a
+                            href="https://www.linkedin.com/in/masina-mani-harsha-349a1816b/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            Send a message on LinkedIn
+                            </a>
                         </article>
 
                         <article className="contact-option">
@@ -79,9 +90,16 @@ const Contact = () => {
                             <h3>Whatsapp</h3>
                             <h4>U.S: +1 (573)-647-1010</h4>
                             <h4>IND: +91-9032330333</h4>
-                            <a href="https://api.whatsapp.com/send?phone=+919032330333" target="_blank">Send a message in Whatsapp</a> 
+                            <a
+                            href="tel: +15736471010"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            Call Me for any Queries
+                            </a>
                         </article>
-                    </div> 
+                    </div>
+
 
                     <form onSubmit={handleSubmit}>
                         <input 

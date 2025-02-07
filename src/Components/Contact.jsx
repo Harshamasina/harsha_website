@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { MdMailOutline } from 'react-icons/md';
 import { AiOutlineLinkedin } from 'react-icons/ai';
-import { MdOutlineWhatsapp } from 'react-icons/md';
+import { AiOutlinePhone } from "react-icons/ai";
 import { TiMessages } from "react-icons/ti";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -65,10 +65,10 @@ const Contact = () => {
                             <h4>maniharsha3333@gmail.com</h4>
                             <h4>mhmcft@umsystem.edu</h4>
                             <a
-                            href="mailto:maniharsha3333@gmail.com"
-                            rel="noopener noreferrer"
+                                href="mailto:maniharsha3333@gmail.com"
+                                rel="noopener noreferrer"
                             >
-                            Send a Mail
+                                Send a Mail
                             </a>
                         </article>
 
@@ -77,25 +77,25 @@ const Contact = () => {
                             <h3>LinkedIn</h3>
                             <h4>Masina Mani Harsha</h4>
                             <a
-                            href="https://www.linkedin.com/in/masina-mani-harsha-349a1816b/"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                                href="https://www.linkedin.com/in/harsha-masina/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                            Send a message on LinkedIn
+                                Send a message on LinkedIn
                             </a>
                         </article>
 
                         <article className="contact-option">
-                            <MdOutlineWhatsapp className="contact-option-icon" />
-                            <h3>Whatsapp</h3>
+                            <AiOutlinePhone className="contact-option-icon" />
+                            <h3>Phone</h3>
                             <h4>U.S: +1 (573)-647-1010</h4>
                             <h4>IND: +91-9032330333</h4>
                             <a
-                            href="tel: +15736471010"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                                href="tel: +15736471010"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                            Call Me for any Queries
+                                Call Me for any Queries
                             </a>
                         </article>
                     </div>

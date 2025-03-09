@@ -52,6 +52,7 @@ const Contact = () => {
                 <meta name="description" content="Contact Harsha Masina by filling this form" />
                 <meta name='keywords' content='Contact Form, Contact Mani Harsha' />
             </Helmet>
+            
             <section id="contact" className='contact'>
                 <h2><TiMessages /></h2>
                 <h2>Contact Me</h2>

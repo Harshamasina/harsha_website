@@ -9,6 +9,7 @@ import Banner from './Components/Banner';
 import Resume from './Components/Resume';
 import GoToTopBtn from './Components/GoToTopBtn';
 import { Helmet } from 'react-helmet';
+import Certifications from './Components/Certifications';
 
 const App = () => {
   return(
@@ -23,6 +24,7 @@ const App = () => {
         <Skills />
         <Projects />
         <Resume />
+        <Certifications />
         <Contact />
         <Footer />
         <GoToTopBtn />

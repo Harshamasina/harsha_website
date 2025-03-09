@@ -1,6 +1,33 @@
 {
   "projectsData": [
     {
+      "title": "Express Shuttle Services Client",
+      "description": "Built this Full Stack Web App and developed a single-page full stack application for shuttle bookings from Rolla to St. Louis and nearby areas, ensuring a robust and modern end-to-end user experience. Implemented Firebase Email Authentication for secure login and session management. Engineered an intutive ticket booking feature; improved booking efficiency by 96%. Integrated PayPal Payment Gateway for secure transactions with a 97% success rate.",
+      "links": [
+        {
+          "label": "Client Code",
+          "icon": "BsGithub",
+          "url": "https://github.com/Harshamasina/express_shuttle_client.git"
+        },
+        {
+          "label": "Server Code",
+          "icon": "BsGithub",
+          "url": "https://github.com/Harshamasina/express_shuttle_server.git"
+        }
+      ]
+    },
+    {
+      "title": "Express Shuttle Services Admin",
+      "description": "Built an admin platform to manage shuttle operations, including routes, revenue, seat availability, and user bookings. Added an OTP-based login system with session management to grant designated organizational users access to the app. Developed a cohesive search feature enabling ride lookup via Ticket ID, Payment ID, user email, or phone number.",
+      "links": [
+        {
+          "label": "Client Code",
+          "icon": "BsGithub",
+          "url": "https://github.com/Harshamasina/express_shuttle_admin.git"
+        }
+      ]
+    },
+    {
       "title": "Cellix Bio MIS",
       "description": "Built and hosted this Web App in AWS EC2. This Data Management Web App which has CRUD operations contains Cellix Bio's each Patent's life Cycle. This MIS App features OTP Login where certain employees in the company can able to access the web app. This app allows employee to know the due dates and annuity dates of the patents which are filed in 14 different countries and also can create custom deadlines. This app also features Granted, Under Examination and Rejected status for each and every patent.",
       "links": [

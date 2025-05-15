@@ -1265,6 +1265,30 @@ textarea::placeholder{
   font-size: 25px;
 }
 
+.credly_container {
+  display: flex;
+  justify-content: center;
+  background: rgba(90, 228, 168, .7);
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.credly {
+  background: #0E6E59;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.credly:hover {
+  background: rgba(90, 228, 168, 0.5);
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 600px) {
   .certificate_container{
     grid-template-columns: 1fr;
@@ -1291,6 +1315,10 @@ textarea::placeholder{
   
   .certificate h5{
     font-size: 25px;
+  }
+
+  .credly_container{
+    width: 300px;
   }
 }
 

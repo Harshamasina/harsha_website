@@ -25,7 +25,7 @@ const Projects = () => {
         <section className="projects" id="projects">
             <h2><TbApps /></h2>
             <h2>Portfolio</h2>
-            <p>Projects</p>
+            <p>I have developed and deployed scalable, full-stack web applications using a diverse range of cutting-edge technologies, focusing on performance, security, and user experience.</p>
             <div className="portfolio-container">
                 {
                     projectsData.map((project, index) => {

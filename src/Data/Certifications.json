@@ -2,31 +2,31 @@
     "certificationsData": [
         {
             "id": 1,
+            "icon": "LiaAws",
+            "title": "AWS Certified Developer – Associate",
+            "institution": "Amazon Web Services",
+            "date": "May 2025"
+        },
+        {
+            "id": 2,
             "icon": "TbClipboardData",
             "title": "Business Analytics and Data Science",
             "institution": "Missouri S&T",
             "date": "Feb 2025"
         },
         {
-            "id": 2,
+            "id": 3,
             "icon": "CgWebsite",
             "title": "Full Stack Development - MERN",
             "institution": "Digital Lync, Hyd",
             "date": "Jun 2023"
         },
         {
-            "id": 3,
+            "id": 4,
             "icon": "LiaAws",
             "title": "AWS Solution Architect",
             "institution": "Digital Lync, Hyd",
             "date": "Jul 2023"
-        },
-        {
-            "id": 4,
-            "icon": "MdDataObject",
-            "title": "Data Structures and Algorithms in C++",
-            "institution": "Udemy",
-            "date": "Aug 2022"
         }
     ]
 }

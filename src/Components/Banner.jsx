@@ -8,7 +8,7 @@ import gradient_video from "../assets/gradient_video.mp4";
 import developer from "../assets/developer.png";
 
 const Banner = () => {
-    const textOptions = ['MERN Stack', 'Full Stack',  'Web Developer', 'AWS Solution Architect'];
+    const textOptions = ['Full Stack',  'AWS Certfied Developer', 'Java Web Developer', 'MERN Stack'];
     const [isIOSorMac, setIsIOSorMac] = useState(false);
 
     useEffect(() => {

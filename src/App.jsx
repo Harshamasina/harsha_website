@@ -10,6 +10,7 @@ import Resume from './Components/Resume';
 import GoToTopBtn from './Components/GoToTopBtn';
 import { Helmet } from 'react-helmet';
 import Certifications from './Components/Certifications';
+import Experience from './Components/Experience';
 
 const App = () => {
   return(
@@ -22,6 +23,7 @@ const App = () => {
         <NavBar />
         <Banner />
         <Skills />
+        <Experience />
         <Projects />
         <Resume />
         <Certifications />

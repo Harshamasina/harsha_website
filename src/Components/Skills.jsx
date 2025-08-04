@@ -49,7 +49,7 @@ const Skills = () => {
                 const IconComponent = iconMapping[category.icon];
 
                 return (
-                    <div>
+                    <div key={catIndex}>
                         <h3>{category.category}</h3>
                         <div className="skills-content">
                             {

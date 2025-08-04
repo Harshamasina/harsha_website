@@ -59,6 +59,15 @@ const NavBar = () => {
 
                             <Nav.Link
                                 as={HashLink}
+                                to="/#experience"
+                                className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('experience')}
+                            >
+                                EXPERIENCE
+                            </Nav.Link>
+
+                            <Nav.Link
+                                as={HashLink}
                                 to="/#projects"
                                 className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
                                 onClick={() => onUpdateActiveLink('projects')}
@@ -94,13 +103,13 @@ const NavBar = () => {
                             </Nav.Link>
                         </Nav>
 
-                        <span className="navbar-text">
+                        {/* <span className="navbar-text">
                             <>
                                 <button className="vvd">
                                     <span><a href='https://github.com/Harshamasina' target='_blank'>Github <BsGithub /></a></span>
                                 </button>
                             </>
-                        </span>
+                        </span> */}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

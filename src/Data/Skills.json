@@ -11,11 +11,13 @@
           { "name": "SASS", "level": "1" },
           { "name": "Material UI", "level": "1" },
           { "name": "JavaScript", "level": "2" },
+          { "name": "TypeScript", "level": "2" },
           { "name": "React JS", "level": "2" },
           { "name": "Vite", "level": "2" },
           { "name": "SEO", "level": "1" },
           {"name": "Paypal Gateway", "level": "2"},
-          {"name": "NextJS", "level": "1"}
+          {"name": "NextJS", "level": "2"},
+          {"name": "Jinja", "level": "1"}
         ]
       },
       {
@@ -24,16 +26,18 @@
         "skills": [
           { "name": "Node JS", "level": "2" },
           { "name": "Express JS", "level": "2" },
+          { "name": "Spring Boot", "level": "2" },
+          { "name": "Spring MVC", "level": "2" },
+          { "name": "Spring Batch", "level": "2" },
+          { "name": "Spring Security", "level": "2" },
+          { "name": "Spring Data JPA", "level": "2"},
           { "name": "MongoDB", "level": "2" },
-          { "name": "Mongoose", "level": "2" },
+          { "name": "PostgreSQL", "level": "2" },
           { "name": "Firebase", "level": "2" },
           { "name": "MySQL", "level": "1" },
           { "name": "Python", "level": "2" },
           { "name": "REST API", "level": "3" },
-          { "name": "Moment JS", "level": "3" },
-          { "name": "Multer", "level": "1" },
-          {"name": "Bcrypt", "level": "1"},
-          {"name": "Stripe", "level": "1"}
+          { "name": "Moment JS", "level": "3" }
         ]
       },
       {
@@ -46,12 +50,16 @@
           { "name": "Route 53", "level": "3" },
           { "name": "EBS", "level": "2" },
           { "name": "EFS", "level": "2" },
-          { "name": "Nginx", "level": "2" },
-          { "name": "Apache", "level": "1" },
-          { "name": "SES", "level": "1" },
+          { "name": "Lambda", "level": "1" },
+          { "name": "SNS", "level": "2" },
+          { "name": "RDS", "level": "2" },
+          { "name": "ECR Fargate", "level": "2" },
           { "name": "Cloud Watch", "level": "2" },
-          { "name": "AWS Labda", "level": "1" },
-          { "name": "Containers", "level": "2" }
+          { "name": "Docker", "level": "2" },
+          { "name": "Nginx", "level": "2" },
+          { "name": "Apache Kafka", "level": "1" },
+          { "name": "Maven", "level": "1" },
+          { "name": "Gunicorn", "level": "1" }
         ]
       },
       {
@@ -66,7 +74,11 @@
           { "name": "Terminal", "level": "2" },
           { "name": "Linux", "level": "2" },
           { "name": "Windows", "level": "3" },
-          { "name": "Postman", "level": "3" },
+          { "name": "Swagger UI", "level": "3" },
+          { "name": "Cypress", "level": "3" },
+          { "name": "Selenium", "level": "3" },
+          { "name": "APS Scheduler", "level": "3" },
+          { "name": "Redux", "level": "3" },
           { "name": "MongoDB Atlas", "level": "3" },
           { "name": "GoDaddy", "level": "3" },
           { "name": "Putty", "level": "1" }

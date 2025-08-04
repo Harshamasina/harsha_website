@@ -6,6 +6,7 @@ import RotatingText from 'react-rotating-text';
 import { useEffect, useState } from 'react';
 import gradient_video from "../assets/gradient_video.mp4";
 import developer from "../assets/developer.png";
+import cert from "../assets/cert.webp";
 
 const Banner = () => {
     const textOptions = ['Full Stack',  'AWS Certfied Developer', 'Java Web Developer', 'MERN Stack'];
@@ -58,8 +59,13 @@ const Banner = () => {
                                         />
                                     </h2>
                                     <p>
-                                        I am a MERN stack developer with a solid background in web development and a love for creating sophisticated web applications. Additionally, I am familiar with the AWS Solution Architecture. I worked for Cellix Bio Pvt Ltd as a Full Stack Developer. IT Graduate Student in Missouri University of Science and Technology MO, USA.
+                                        I am a Full stack developer with a solid background in web development and a love for creating sophisticated web applications. Additionally, I am familiar with the AWS Cloud Architecture. I am currently working as a Full Stack Developer in CGI INC. IT Graduate Student from Missouri University S&T MO, USA.
                                     </p>
+                                    <a href='https://www.credly.com/badges/854c1786-4e3a-4200-a2c1-ddfe939d8760/embedded' target='_blank'>
+                                        <div className='credly_container'>
+                                            <img src={cert} alt='AWS Certification' />
+                                        </div>
+                                    </a>
                                     <Router>
                                         <HashLink to="/#resume" style={{textDecoration: 'none'}}>
                                             <button>Know More <ArrowRightCircle size={25} /></button>

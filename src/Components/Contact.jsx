@@ -63,7 +63,7 @@ const Contact = () => {
                         <article className="contact-option">
                             <MdMailOutline className="contact-option-icon" />
                             <h3>Email</h3>
-                            <h4>maniharsha3333@gmail.com</h4>
+                            <h4>maniharshamasina@gmail.com</h4>
                             <h4>mhmcft@umsystem.edu</h4>
                             <a
                                 href="mailto:maniharsha3333@gmail.com"
@@ -89,14 +89,14 @@ const Contact = () => {
                         <article className="contact-option">
                             <AiOutlinePhone className="contact-option-icon" />
                             <h3>Phone</h3>
-                            <h4>U.S: +1 (573)-647-1010</h4>
+                            <h4>U.S: +1 (314)-474-7299</h4>
                             <h4>IND: +91-9032330333</h4>
                             <a
                                 href="tel: +15736471010"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Call Me for any Queries
+                                Ping Me for any Queries
                             </a>
                         </article>
                     </div>

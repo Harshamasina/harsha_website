@@ -1,6 +1,17 @@
 {
   "projectsData": [
     {
+      "title": "TalkFlow AI",
+      "description": "TalkFlow connects a multi-modal voice agent (powered by Vapi, Deepgram, and ElevenLabs) with a Next.js dashboard and Firebase data layer. Candidates log in, generate role-specific question sets with Google Gemini, speak through the interview in real time, and immediately receive a rubric-based performance review. All interviews, transcripts, and feedback are persisted so users can iterate on their preparation.",
+      "links": [
+        {
+          "label": "Client Code",
+          "icon": "BsGithub",
+          "url": "https://github.com/Harshamasina/TalkFlow"
+        }
+      ]
+    },
+    {
       "title": "Express Shuttle Services Client",
       "description": "Built this Full Stack Web App and developed a single-page full stack application for shuttle bookings from Rolla to St. Louis and nearby areas, ensuring a robust and modern end-to-end user experience. Implemented Firebase Email Authentication for secure login and session management. Engineered an intutive ticket booking feature; improved booking efficiency by 96%. Integrated PayPal Payment Gateway for secure transactions with a 97% success rate.",
       "links": [

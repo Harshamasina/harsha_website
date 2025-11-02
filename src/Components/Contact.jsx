@@ -138,7 +138,7 @@ const Contact = () => {
                             placeholder='Enter Your Message' 
                             required 
                         />
-                        <button type='submit' className='btn-submit'>Send Message</button>
+                        <button type='submit' className='btn-submit'>Send</button>
                     </form>
                 </div>
 

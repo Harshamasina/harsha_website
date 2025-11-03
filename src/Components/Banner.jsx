@@ -61,16 +61,22 @@ const Banner = () => {
                                     <p>
                                         I am a Full stack developer with a solid background in web development and a love for creating sophisticated web applications using AI. Additionally, I am familiar with the AWS Cloud Architecture. I am currently working as a Full Stack Developer in CGI INC. IT Graduate Student from Missouri University S&T MO, USA.
                                     </p>
-                                    <a href='https://www.credly.com/badges/854c1786-4e3a-4200-a2c1-ddfe939d8760/embedded' target='_blank'>
-                                        <div className='credly_container'>
+                                    <div className="banner-cta">
+                                        <a
+                                            className='credly_container'
+                                            href='https://www.credly.com/badges/854c1786-4e3a-4200-a2c1-ddfe939d8760/embedded'
+                                            target='_blank'
+                                            rel="noopener noreferrer"
+                                        >
                                             <img src={cert} alt='AWS Certification' />
-                                        </div>
-                                    </a>
-                                    <Router>
-                                        <HashLink to="/#resume" style={{textDecoration: 'none'}}>
-                                            <button>Know More <ArrowRightCircle size={25} /></button>
-                                        </HashLink>
-                                    </Router>
+                                        </a>
+                                        <Router>
+                                            <HashLink to="/#resume" className="banner-cta__button">
+                                                <span>Know More</span>
+                                                <ArrowRightCircle size={25} />
+                                            </HashLink>
+                                        </Router>
+                                    </div>
                                 </div>
                             </Col>
 

@@ -130,12 +130,12 @@ color: red;
 /************ Navbar Css ************/
 nav.navbar {
   padding: 12px 0;
+  height: 80px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
-  overflow: hidden;
   background: rgba(13, 33, 43, 0.45);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(var(--blur-amount));
@@ -151,7 +151,8 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 150px;
+  max-width: 200px;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -173,6 +174,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
   display: flex;
   align-items: center;
+}
+
+.nav-img{
+  width: 120px;
+  height: 65px;
 }
 
 .navbar-text button {
@@ -228,6 +234,222 @@ span.navbar-text {
   color: #ffffff;
   box-shadow: 0 16px 38px rgba(5, 20, 28, 0.55);
   transform: translateY(-2px);
+}
+
+.navbar-cta {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.navbar-github {
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: rgba(13, 33, 43, 0.55);
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  box-shadow: 0 18px 40px rgba(5, 17, 24, 0.45);
+  backdrop-filter: blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, background 0.3s ease;
+}
+
+.navbar-github svg {
+  font-size: 22px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-github:hover {
+  color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 58px rgba(5, 20, 28, 0.6);
+  background: rgba(13, 33, 43, 0.78);
+}
+
+.navbar-github:hover svg {
+  transform: translateX(6px);
+}
+
+@media (max-width: 991px) {
+  nav.navbar {
+    height: auto;
+    padding: 12px 18px;
+  }
+
+  nav.navbar .navbar-collapse {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  nav.navbar .navbar-collapse.show,
+  nav.navbar .navbar-collapse.collapsing {
+    background: rgba(13, 33, 43, 0.85);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    padding: 18px 16px;
+    box-shadow: 0 20px 45px rgba(5, 15, 20, 0.6);
+  }
+
+  nav.navbar .navbar-nav {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 12px 18px;
+    font-size: 22px;
+  }
+
+  .navbar-cta {
+    margin: 18px 0 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-github {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .banner {
+    padding: 160px 0 100px;
+    height: auto;
+  }
+
+  .banner .tagline {
+    font-size: 24px;
+  }
+
+  .banner h1 {
+    font-size: 52px;
+  }
+
+  .banner h2 {
+    font-size: 34px;
+  }
+
+  .banner p {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .banner-cta {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .banner-cta__button {
+    font-size: 22px;
+    padding: 12px 26px;
+  }
+
+  .coder-img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .coder-img img {
+    width: 80% !important;
+    max-width: 360px;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .portfolio-container > div {
+    width: 100% !important;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .portfolio-item-cta {
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: stretch;
+  }
+
+  .portfolio-item-mis {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .portfolio-item-st img,
+  .portfolio-item-cb img,
+  .portfolio-item-ap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .resume {
+    width: 100%;
+  }
+
+  .resume h2 {
+    font-size: 54px;
+  }
+
+  .resume p {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .resume-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .resume_img img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .resume-btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .resume-btn a {
+    font-size: 24px !important;
+  }
+
+  .certifications {
+    width: 100%;
+  }
+
+  .certificate_container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .certificate span {
+    font-size: 48px;
+  }
+
+  .certificate h3 {
+    font-size: 32px;
+  }
+
+  .certificate h5 {
+    font-size: 22px;
+  }
 }
 
 nav.navbar .navbar-collapse {
@@ -288,6 +510,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media screen and (max-width: 600px) {
+  nav.navbar a.navbar-brand {
+    width: 120px;
+  }
+
   .nav-img{
     width: 110px;
     height: 70px;
@@ -432,6 +658,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: var(--accent-primary);
 }
 
+.banner-cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.banner-cta .credly_container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-cta__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: rgba(13, 33, 43, 0.55);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1;
+  box-shadow: 0 18px 45px rgba(5, 20, 28, 0.55);
+  backdrop-filter: blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.banner-cta__button svg {
+  font-size: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner-cta__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 55px rgba(5, 20, 28, 0.6);
+  color: var(--accent-primary);
+}
+
+.banner-cta__button:hover svg {
+  transform: translateX(10px);
+}
+
 .coder-img img {
   animation: updown 3s linear infinite;
   width: 600px !important;
@@ -452,6 +726,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .banner h2 {
     font-size: 35px;
+  }
+
+  .banner-cta {
+    gap: 18px;
+    margin-top: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner-cta__button {
+    font-size: 20px;
+    padding: 10px 22px;
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  .banner-cta__button svg {
+    font-size: 22px;
+  }
+
+  .banner-cta .credly_container {
+    margin: 0;
+    align-self: flex-start;
   }
 
   .coder-img img{
@@ -990,7 +1289,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media screen and (max-width: 1024px) {
   .portfolio-container{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .portfolio-container > div {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .portfolio-item-cta,
+  .portfolio-item-mis {
+    flex-direction: column;
     gap: 1.2rem;
   }
 }
@@ -1005,43 +1316,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .portfolio-container{
-    grid-template-columns: repeat(1, 1fr);
-    margin-left: -10% !important;
-    margin-top: 10% !important;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 1.5rem;
   }
 
   .portfolio-container > div{
-    margin-top: 3%;
-    width: 110% !important;
+    margin-top: 0;
+    width: 100% !important;
   }
 
   .portfolio-item-st img{
     width: 90%;
-    height: 50%;
-    margin-left: 7% !important;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 
   .portfolio-item-cb img{
-    width: 60%;
-    height: 40%;
-    margin-left: 15% !important;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 
   .portfolio-item-ap img{
-    width: 100%;
-    height: 90px;
-    margin-left: 1%;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 
   .portfolio-item-cta{
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
     margin-top: 1rem;
   }
 
   .portfolio-item-mis{
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
     margin-top: 1rem;
   }
 
@@ -1576,7 +1892,9 @@ textarea::placeholder{
   }
 
   .credly_container{
-    width: 300px;
+    width: auto;
+    max-width: 160px;
+    justify-content: flex-start;
   }
 }
 

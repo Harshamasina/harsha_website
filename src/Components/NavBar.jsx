@@ -8,6 +8,7 @@ import harsha_logo_white from "../assets/harsha_logo_white.png";
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     useEffect(() => {
         const onScroll = () => {
@@ -25,9 +26,19 @@ const NavBar = () => {
         setActiveLink(value);
     };
 
+    const handleNavClick = (value) => {
+        onUpdateActiveLink(value);
+        setExpanded(false);
+    };
+
     return (
         <Router>
-            <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
+            <Navbar
+                expand="lg"
+                expanded={expanded}
+                onToggle={setExpanded}
+                className={scrolled ? 'scrolled' : ''}
+            >
                 <Container>
                     <Navbar.Brand href="/">
                         <img className='nav-img' src={harsha_logo_white} alt="Logo" />
@@ -43,7 +54,7 @@ const NavBar = () => {
                                 as={HashLink}
                                 to="/#home"
                                 className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('home')}
+                                onClick={() => handleNavClick('home')}
                             >
                                 HOME
                             </Nav.Link>
@@ -52,7 +63,7 @@ const NavBar = () => {
                                 as={HashLink}
                                 to="/#skills"
                                 className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('skills')}
+                                onClick={() => handleNavClick('skills')}
                             >
                                 SKILLS
                             </Nav.Link>
@@ -61,7 +72,7 @@ const NavBar = () => {
                                 as={HashLink}
                                 to="/#experience"
                                 className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('experience')}
+                                onClick={() => handleNavClick('experience')}
                             >
                                 EXPERIENCE
                             </Nav.Link>
@@ -70,7 +81,7 @@ const NavBar = () => {
                                 as={HashLink}
                                 to="/#projects"
                                 className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('projects')}
+                                onClick={() => handleNavClick('projects')}
                             >
                                 PROJECTS
                             </Nav.Link>
@@ -79,7 +90,7 @@ const NavBar = () => {
                                 as={HashLink}
                                 to="/#resume"
                                 className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('resume')}
+                                onClick={() => handleNavClick('resume')}
                             >
                                 RESUME
                             </Nav.Link>
@@ -87,8 +98,8 @@ const NavBar = () => {
                             <Nav.Link
                                 as={HashLink}
                                 to="/#certifications"
-                                className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('certifications')}
+                                className={activeLink === 'certifications' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => handleNavClick('certifications')}
                             >
                                 CERTIFICATIONS
                             </Nav.Link>
@@ -97,19 +108,24 @@ const NavBar = () => {
                                 as={HashLink}
                                 to="/#contact"
                                 className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('contact')}
+                                onClick={() => handleNavClick('contact')}
                             >
                                 CONTACT
                             </Nav.Link>
                         </Nav>
-
-                        {/* <span className="navbar-text">
-                            <>
-                                <button className="vvd">
-                                    <span><a href='https://github.com/Harshamasina' target='_blank'>Github <BsGithub /></a></span>
-                                </button>
-                            </>
-                        </span> */}
+                        <div className="navbar-cta">
+                            <a
+                                className="navbar-github"
+                                href="https://github.com/Harshamasina"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Open GitHub profile in a new tab"
+                                onClick={() => setExpanded(false)}
+                            >
+                                <span>GitHub</span>
+                                <BsGithub />
+                            </a>
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -17,11 +17,19 @@ const Resume = () => {
                 <h2>Resume</h2>
                 <p>Check out my resume</p>
                 <div className="resume-container">
-                    <div className='resume_img'>
+                    <div
+                        className='resume_img'
+                        data-reveal="zoom-in"
+                        data-reveal-duration={600}
+                    >
                         <img src={resume} alt="Header Img" />
                     </div>
                     
-                    <div className='resume-btn'>
+                    <div
+                        className='resume-btn'
+                        data-reveal="fade-up"
+                        data-reveal-delay={180}
+                    >
                         <a href={resumePdf} target="_blank" rel="noopener noreferrer">
                             <span>View or Download My Resume <MdOutlineDownload /></span>
                         </a>

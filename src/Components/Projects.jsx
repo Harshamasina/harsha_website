@@ -35,7 +35,12 @@ const Projects = () => {
                             : "portfolio-item-cta";
 
                         return (
-                        <div className="portfolio-item" key={index}>
+                        <div
+                            className="portfolio-item"
+                            key={index}
+                            data-reveal="fade-up"
+                            data-reveal-delay={index * 120}
+                        >
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
                             <div className={linkContainerClass}>

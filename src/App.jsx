@@ -11,8 +11,11 @@ import GoToTopBtn from './Components/GoToTopBtn';
 import { Helmet } from 'react-helmet';
 import Certifications from './Components/Certifications';
 import Experience from './Components/Experience';
+import useScrollReveal from './hooks/useScrollReveal';
 
 const App = () => {
+  useScrollReveal();
+
   return(
     <>
       <>

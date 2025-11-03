@@ -49,12 +49,23 @@ const Skills = () => {
                 const IconComponent = iconMapping[category.icon];
 
                 return (
-                    <div key={catIndex}>
+                    <div
+                        key={catIndex}
+                        className="skills-category"
+                        data-reveal="fade-up"
+                        data-reveal-delay={catIndex * 120}
+                    >
                         <h3>{category.category}</h3>
                         <div className="skills-content">
                             {
                                 category.skills.map((skill, index) => (
-                                    <article className="skill-details" key={index}>
+                                    <article
+                                        className="skill-details"
+                                        key={index}
+                                        data-reveal="fade-up"
+                                        data-reveal-delay={(catIndex * 100) + (index * 60)}
+                                        data-reveal-duration={520}
+                                    >
                                     {
                                         IconComponent && (
                                             <IconComponent className="skill-details-icon" />

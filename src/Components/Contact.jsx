@@ -60,7 +60,11 @@ const Contact = () => {
 
                 <div className="container contact-container">
                     <div className="contact-options">
-                        <article className="contact-option">
+                        <article
+                            className="contact-option"
+                            data-reveal="fade-up"
+                            data-reveal-delay={80}
+                        >
                             <MdMailOutline className="contact-option-icon" />
                             <h3>Email</h3>
                             <h4>maniharshamasina@gmail.com</h4>
@@ -73,7 +77,11 @@ const Contact = () => {
                             </a>
                         </article>
 
-                        <article className="contact-option">
+                        <article
+                            className="contact-option"
+                            data-reveal="fade-up"
+                            data-reveal-delay={160}
+                        >
                             <AiOutlineLinkedin className="contact-option-icon" />
                             <h3>LinkedIn</h3>
                             <h4>Masina Mani Harsha</h4>
@@ -86,7 +94,11 @@ const Contact = () => {
                             </a>
                         </article>
 
-                        <article className="contact-option">
+                        <article
+                            className="contact-option"
+                            data-reveal="fade-up"
+                            data-reveal-delay={240}
+                        >
                             <AiOutlinePhone className="contact-option-icon" />
                             <h3>Phone</h3>
                             <h4>U.S: +1 (314)-474-7299</h4>
@@ -102,7 +114,12 @@ const Contact = () => {
                     </div>
 
 
-                    <form onSubmit={handleSubmit}>
+                    <form
+                        onSubmit={handleSubmit}
+                        data-reveal="fade-left"
+                        data-reveal-delay={200}
+                        data-reveal-duration={700}
+                    >
                         <input 
                             type='text' 
                             name='name'

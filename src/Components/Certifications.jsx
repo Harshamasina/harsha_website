@@ -30,10 +30,15 @@ const Certifications = () => {
                 <p>Check out my Accredited Certifications</p>
 
                 <div className="certificate_container">
-                {certificationsData.certificationsData.map((cert) => {
+                {certificationsData.certificationsData.map((cert, index) => {
                     const IconComponent = iconsMap[cert.icon] || GrCertificate; // graceful fallback
                     return (
-                    <div key={cert.id} className="certificate">
+                    <div
+                        key={cert.id}
+                        className="certificate"
+                        data-reveal="fade-up"
+                        data-reveal-delay={index * 120}
+                    >
                         <span>{<IconComponent />}</span>
                         <h3>{cert.title}</h3>
                         <h5>
